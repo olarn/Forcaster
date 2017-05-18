@@ -106,7 +106,7 @@
 				37C170271ECD453F00F7B2C4 /* Info.plist */,
 				37C170461ECD507F00F7B2C4 /* Assets */,
 				37C170501ECD7F1F00F7B2C4 /* OpenWeatherAPI */,
-				37C170471ECD522A00F7B2C4 /* SearchWeather */,
+				37C170471ECD522A00F7B2C4 /* View Controllers and Presenters */,
 			);
 			path = Forcaster;
 			sourceTree = "<group>";
@@ -130,13 +130,13 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
-		37C170471ECD522A00F7B2C4 /* SearchWeather */ = {
+		37C170471ECD522A00F7B2C4 /* View Controllers and Presenters */ = {
 			isa = PBXGroup;
 			children = (
 				37C1703D1ECD4FAC00F7B2C4 /* SearchWeatherViewController.swift */,
 				37C1703F1ECD4FC500F7B2C4 /* SearchWeatherPresenter.swift */,
 			);
-			name = SearchWeather;
+			name = "View Controllers and Presenters";
 			sourceTree = "<group>";
 		};
 		37C170501ECD7F1F00F7B2C4 /* OpenWeatherAPI */ = {

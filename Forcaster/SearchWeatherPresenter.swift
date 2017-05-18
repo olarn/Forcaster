@@ -8,8 +8,6 @@
 
 import Foundation
 
-typealias SearchWeatherCallback = ((Weather) -> Void)
-
 class SearchWeatherPresenter {
 
     let api: OpenWeatherAPIProtocol

@@ -28,7 +28,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City's Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Gp-10-tR3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City's Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2Gp-10-tR3">
                                 <rect key="frame" x="39" y="80" width="292" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
@@ -97,6 +97,7 @@
                         <outlet property="cityLabel" destination="oas-bC-gCh" id="Ybk-2E-RyF"/>
                         <outlet property="humidityLabel" destination="HtA-QT-bmK" id="GF8-Z1-Jbe"/>
                         <outlet property="iconLabel" destination="de6-of-QhI" id="jGF-VZ-7Gy"/>
+                        <outlet property="loadingIndicator" destination="khS-Oc-xJq" id="q8i-YL-fzR"/>
                         <outlet property="searchCityName" destination="2Gp-10-tR3" id="t4K-Pw-w7b"/>
                         <outlet property="tempLabel" destination="rPG-UL-CTq" id="gF3-wo-Zs7"/>
                     </connections>
@@ -110,7 +111,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="diY-7b-dSU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5ob-Cy-Cjk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5ob-Cy-Cjk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

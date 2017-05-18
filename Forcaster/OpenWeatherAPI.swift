@@ -11,7 +11,10 @@ import SwiftyJSON
 
 /// The api key to communicate with openweathermap.org
 /// Create you own on https://home.openweathermap.org/users/sign_up
-let apiKey = "<<YOUR API KEY>>"
+
+fileprivate let apiKey = "<<YOUR API KEY>>"
+
+typealias SearchWeatherCallback = ((Weather) -> Void)
 
 protocol OpenWeatherAPIProtocol {
     func searchWeatherByCity(city: String, result: @escaping SearchWeatherCallback)
@@ -26,13 +29,16 @@ class OpenWeatherAPI: OpenWeatherAPIProtocol {
     }
 
     func searchWeatherByCity(city: String, result: @escaping SearchWeatherCallback) {
+
         let url = "http://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&units=metric"
         restClient.get(urlString: url) { data in
+
+            let emptyWeather = Weather.empty
             guard let json = data else {
-                result(Weather.empty)
+                result(emptyWeather)
                 return
             }
-            let emptyWeather = Weather.empty
+
             result(
                 Weather(
                     cityName: json["name"].string ?? emptyWeather.cityName,

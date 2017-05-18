@@ -15,19 +15,46 @@ class SearchWeatherViewController: UIViewController {
     @IBOutlet weak var humidityLabel: UILabel!
     @IBOutlet weak var iconLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+
+    var presenter: SearchWeatherPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        prepareViewPresenter()
+        prepareSearchCallback()
+        searchCityName.delegate = self
     }
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+// MARK: -
+
+extension SearchWeatherViewController: UITextFieldDelegate {
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.searchCityName.resignFirstResponder()
+        presenter.search(city: textField.text ?? "")
+        return true
     }
-    */
+
+}
+
+extension SearchWeatherViewController {
+
+    fileprivate func prepareViewPresenter() {
+        let restClient = RestClient()
+        let weatherApi = OpenWeatherAPI(restClient: restClient)
+        self.presenter = SearchWeatherPresenter(weatherApi: weatherApi)
+    }
+
+    fileprivate func prepareSearchCallback() {
+        presenter.searchCityWetherCallback = { weather in
+            self.cityLabel.text = weather.cityName
+            self.tempLabel.text = "\(weather.temperature)"
+            self.humidityLabel.text = "\(weather.humidity)"
+            self.iconLabel.text = weather.icon
+        }
+    }
 
 }
