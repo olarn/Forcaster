@@ -77,20 +77,4 @@ class SearchWeatherTests: XCTestCase {
         }
     }
 
-//    func testSearchBangkokOverRealOpenWeatherAPIShouldReturnBangkokWeather() {
-//        let expected = expectation(description: "Search Bangkok Over OpenWeatherAPI Should Return Bangkok's Weather")
-//
-//        let openWeatherAPI = OpenWeatherAPI(restClient: RestClient())
-//        openWeatherAPI.searchWeatherByCity(city: "Bangkok") { weather in
-//            XCTAssertFalse(weather == Weather.empty)
-//            expected.fulfill()
-//        }
-//
-//        waitForExpectations(timeout: 1) { error in
-//            if let e = error {
-//                XCTFail(e.localizedDescription)
-//            }
-//        }
-//    }
-
 }

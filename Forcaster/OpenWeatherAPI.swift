@@ -14,13 +14,7 @@ import SwiftyJSON
 
 fileprivate let apiKey = "<<YOUR API KEY>>"
 
-typealias SearchWeatherCallback = ((Weather) -> Void)
-
-protocol OpenWeatherAPIProtocol {
-    func searchWeatherByCity(city: String, result: @escaping SearchWeatherCallback)
-}
-
-class OpenWeatherAPI: OpenWeatherAPIProtocol {
+class OpenWeatherAPI: OpenWeatherAPIProtocol, OpenWeatherForcastAPIProtocol {
 
     let restClient: RestClientProtocol
 
@@ -29,16 +23,13 @@ class OpenWeatherAPI: OpenWeatherAPIProtocol {
     }
 
     func searchWeatherByCity(city: String, result: @escaping SearchWeatherCallback) {
-
         let url = "http://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&units=metric"
         restClient.get(urlString: url) { data in
-
             let emptyWeather = Weather.empty
             guard let json = data else {
                 result(emptyWeather)
                 return
             }
-
             result(
                 Weather(
                     cityName: json["name"].string ?? emptyWeather.cityName,
@@ -46,5 +37,10 @@ class OpenWeatherAPI: OpenWeatherAPIProtocol {
                     humidity: json["main"]["humidity"].int ?? emptyWeather.humidity,
                     icon: iconNameToChar(icon: json["weather"][0]["icon"].string ?? "e")))
         }
+    }
+
+    func weatherForcastFor(cityName: String, result: @escaping ForcastWeatherCallback) {
+        //TODO: code here...
+        
     }
 }
