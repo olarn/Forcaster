@@ -22,10 +22,9 @@ class SearchWeatherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareViewPresenter()
-        prepareSearchCallback()
+        prepareWhenSearchCallback()
         searchCityName.delegate = self
     }
-
 }
 
 // MARK: -
@@ -33,8 +32,9 @@ class SearchWeatherViewController: UIViewController {
 extension SearchWeatherViewController: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.searchCityName.resignFirstResponder()
+        searchCityName.resignFirstResponder()
         presenter.search(city: textField.text ?? "")
+        loadingIndicator.startAnimating()
         return true
     }
 
@@ -45,14 +45,15 @@ extension SearchWeatherViewController {
     fileprivate func prepareViewPresenter() {
         let restClient = RestClient()
         let weatherApi = OpenWeatherAPI(restClient: restClient)
-        self.presenter = SearchWeatherPresenter(weatherApi: weatherApi)
+        presenter = SearchWeatherPresenter(weatherApi: weatherApi)
     }
 
-    fileprivate func prepareSearchCallback() {
+    fileprivate func prepareWhenSearchCallback() {
         presenter.searchCityWetherCallback = { weather in
+            self.loadingIndicator.stopAnimating()
             self.cityLabel.text = weather.cityName
-            self.tempLabel.text = "\(weather.temperature)"
-            self.humidityLabel.text = "\(weather.humidity)"
+            self.tempLabel.text = "\(weather.temperature) ºC"
+            self.humidityLabel.text = "\(weather.humidity)%"
             self.iconLabel.text = weather.icon
         }
     }
