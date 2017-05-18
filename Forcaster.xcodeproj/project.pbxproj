@@ -26,6 +26,7 @@
 		37C1705A1ECD994300F7B2C4 /* WeatherForcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C170591ECD994300F7B2C4 /* WeatherForcastTests.swift */; };
 		37C1705C1ECD9B2900F7B2C4 /* OpenWeather+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C1705B1ECD9B2900F7B2C4 /* OpenWeather+Protocol.swift */; };
 		37C170611ECD9E3100F7B2C4 /* DailyForcastTableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C170601ECD9E3100F7B2C4 /* DailyForcastTableViewPresenter.swift */; };
+		37C170631ECDA35300F7B2C4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37C170621ECDA35300F7B2C4 /* README.txt */; };
 		A684B51BD9EFEC1EF8A45AD4 /* Pods_Forcaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DD73B215D5FA0ACDE343DF /* Pods_Forcaster.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		37C170591ECD994300F7B2C4 /* WeatherForcastTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForcastTests.swift; sourceTree = "<group>"; };
 		37C1705B1ECD9B2900F7B2C4 /* OpenWeather+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenWeather+Protocol.swift"; sourceTree = "<group>"; };
 		37C170601ECD9E3100F7B2C4 /* DailyForcastTableViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyForcastTableViewPresenter.swift; sourceTree = "<group>"; };
+		37C170621ECDA35300F7B2C4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = Forcaster/README.txt; sourceTree = "<group>"; };
 		6903DCF72AAE7B8ED140C76D /* Pods-Forcaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forcaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Forcaster/Pods-Forcaster.release.xcconfig"; sourceTree = "<group>"; };
 		76E5BE78521BA624F266A685 /* Pods_ForcasterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForcasterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D77132F286B50FF4441FA96 /* Pods-Forcaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forcaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Forcaster/Pods-Forcaster.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		37C1700F1ECD453F00F7B2C4 = {
 			isa = PBXGroup;
 			children = (
+				37C170621ECDA35300F7B2C4 /* README.txt */,
 				37C1701A1ECD453F00F7B2C4 /* Forcaster */,
 				37C1702F1ECD453F00F7B2C4 /* ForcasterTests */,
 				37C170191ECD453F00F7B2C4 /* Products */,
@@ -307,6 +310,7 @@
 				37C170231ECD453F00F7B2C4 /* Assets.xcassets in Resources */,
 				37C170211ECD453F00F7B2C4 /* Main.storyboard in Resources */,
 				37C1703C1ECD4EAB00F7B2C4 /* weather.ttf in Resources */,
+				37C170631ECDA35300F7B2C4 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
