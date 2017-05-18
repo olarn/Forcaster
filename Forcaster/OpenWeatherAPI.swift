@@ -12,8 +12,8 @@ import SwiftyJSON
 /// The api key to communicate with openweathermap.org
 /// Create you own on https://home.openweathermap.org/users/sign_up
 
-// fileprivate let apiKey = "<<YOUR API KEY>>"
-fileprivate let apiKey = "80ee9ef64a3e3b1725545ea3e6f9553b"
+fileprivate let apiKey = "<<YOUR API KEY>>"
+
 typealias SearchWeatherCallback = ((Weather) -> Void)
 
 protocol OpenWeatherAPIProtocol {
