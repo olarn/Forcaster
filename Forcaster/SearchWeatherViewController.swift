@@ -3,7 +3,7 @@
 //  Forcaster
 //
 //  Created by Olarn U. on 5/18/2560 BE.
-//  Copyright © 2560 Olarn U. All rights reserved.
+//  Copyright © 2560 AYCAP All rights reserved.
 //
 
 import UIKit
