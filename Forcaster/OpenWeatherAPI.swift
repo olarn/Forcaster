@@ -40,7 +40,13 @@ class OpenWeatherAPI: OpenWeatherAPIProtocol, OpenWeatherForcastAPIProtocol {
     }
 
     func weatherForcastFor(cityName: String, result: @escaping ForcastWeatherCallback) {
+
         //TODO: code here...
-        
+
+        // API Docs Here...
+        // https://openweathermap.org/forecast16
+
+        // API Example here ... 
+        // http://samples.openweathermap.org/data/2.5/forecast/daily?q=Bangkok&appid=b1b15e88fa797225412429c1c50c122a1
     }
 }
