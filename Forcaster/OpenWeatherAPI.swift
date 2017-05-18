@@ -9,11 +9,13 @@
 import Foundation
 import SwiftyJSON
 
+/// The api key to communicate with openweathermap.org
+/// Create you own on https://home.openweathermap.org/users/sign_up
+let apiKey = "<<YOUR API KEY>>"
+
 protocol OpenWeatherAPIProtocol {
     func searchWeatherByCity(city: String, result: @escaping SearchWeatherCallback)
 }
-
- let apiKey = "<<YOUR API KEY>>"
 
 class OpenWeatherAPI: OpenWeatherAPIProtocol {
 

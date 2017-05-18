@@ -105,10 +105,8 @@
 				37C170241ECD453F00F7B2C4 /* LaunchScreen.storyboard */,
 				37C170271ECD453F00F7B2C4 /* Info.plist */,
 				37C170461ECD507F00F7B2C4 /* Assets */,
+				37C170501ECD7F1F00F7B2C4 /* OpenWeatherAPI */,
 				37C170471ECD522A00F7B2C4 /* SearchWeather */,
-				37C1704A1ECD562A00F7B2C4 /* Weather.swift */,
-				37C1704C1ECD5B8300F7B2C4 /* OpenWeatherAPI.swift */,
-				37C1704E1ECD6C0B00F7B2C4 /* RestClient.swift */,
 			);
 			path = Forcaster;
 			sourceTree = "<group>";
@@ -139,6 +137,16 @@
 				37C1703F1ECD4FC500F7B2C4 /* SearchWeatherPresenter.swift */,
 			);
 			name = SearchWeather;
+			sourceTree = "<group>";
+		};
+		37C170501ECD7F1F00F7B2C4 /* OpenWeatherAPI */ = {
+			isa = PBXGroup;
+			children = (
+				37C1704A1ECD562A00F7B2C4 /* Weather.swift */,
+				37C1704C1ECD5B8300F7B2C4 /* OpenWeatherAPI.swift */,
+				37C1704E1ECD6C0B00F7B2C4 /* RestClient.swift */,
+			);
+			name = OpenWeatherAPI;
 			sourceTree = "<group>";
 		};
 		64EE5DB073DF582809ADCE71 /* Pods */ = {
