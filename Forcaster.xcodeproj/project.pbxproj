@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		03BD2B231BCFDF6E1EDF97E8 /* Pods_ForcasterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E5BE78521BA624F266A685 /* Pods_ForcasterTests.framework */; };
 		37C1701C1ECD453F00F7B2C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C1701B1ECD453F00F7B2C4 /* AppDelegate.swift */; };
-		37C1701E1ECD453F00F7B2C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C1701D1ECD453F00F7B2C4 /* ViewController.swift */; };
 		37C170211ECD453F00F7B2C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C1701F1ECD453F00F7B2C4 /* Main.storyboard */; };
 		37C170231ECD453F00F7B2C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C170221ECD453F00F7B2C4 /* Assets.xcassets */; };
 		37C170261ECD453F00F7B2C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C170241ECD453F00F7B2C4 /* LaunchScreen.storyboard */; };
-		37C170311ECD453F00F7B2C4 /* ForcasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C170301ECD453F00F7B2C4 /* ForcasterTests.swift */; };
+		37C1703C1ECD4EAB00F7B2C4 /* weather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37C1703B1ECD4EAB00F7B2C4 /* weather.ttf */; };
+		37C1703E1ECD4FAC00F7B2C4 /* SearchWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C1703D1ECD4FAC00F7B2C4 /* SearchWeatherViewController.swift */; };
+		37C170401ECD4FC500F7B2C4 /* SearchWeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C1703F1ECD4FC500F7B2C4 /* SearchWeatherPresenter.swift */; };
+		37C170491ECD54EC00F7B2C4 /* SearchWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C170481ECD54EC00F7B2C4 /* SearchWeatherTests.swift */; };
+		37C1704B1ECD562A00F7B2C4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C1704A1ECD562A00F7B2C4 /* Weather.swift */; };
+		37C1704D1ECD5B8300F7B2C4 /* OpenWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C1704C1ECD5B8300F7B2C4 /* OpenWeatherAPI.swift */; };
+		37C1704F1ECD6C0B00F7B2C4 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C1704E1ECD6C0B00F7B2C4 /* RestClient.swift */; };
 		A684B51BD9EFEC1EF8A45AD4 /* Pods_Forcaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DD73B215D5FA0ACDE343DF /* Pods_Forcaster.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,14 +37,20 @@
 		30DD73B215D5FA0ACDE343DF /* Pods_Forcaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Forcaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C170181ECD453F00F7B2C4 /* Forcaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forcaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C1701B1ECD453F00F7B2C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37C1701D1ECD453F00F7B2C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37C170201ECD453F00F7B2C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37C170221ECD453F00F7B2C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37C170251ECD453F00F7B2C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37C170271ECD453F00F7B2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37C1702C1ECD453F00F7B2C4 /* ForcasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForcasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		37C170301ECD453F00F7B2C4 /* ForcasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcasterTests.swift; sourceTree = "<group>"; };
 		37C170321ECD453F00F7B2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37C1703B1ECD4EAB00F7B2C4 /* weather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = weather.ttf; sourceTree = "<group>"; };
+		37C1703D1ECD4FAC00F7B2C4 /* SearchWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchWeatherViewController.swift; sourceTree = "<group>"; };
+		37C1703F1ECD4FC500F7B2C4 /* SearchWeatherPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchWeatherPresenter.swift; sourceTree = "<group>"; };
+		37C170411ECD500C00F7B2C4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		37C170481ECD54EC00F7B2C4 /* SearchWeatherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchWeatherTests.swift; sourceTree = "<group>"; };
+		37C1704A1ECD562A00F7B2C4 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		37C1704C1ECD5B8300F7B2C4 /* OpenWeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPI.swift; sourceTree = "<group>"; };
+		37C1704E1ECD6C0B00F7B2C4 /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		6903DCF72AAE7B8ED140C76D /* Pods-Forcaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forcaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Forcaster/Pods-Forcaster.release.xcconfig"; sourceTree = "<group>"; };
 		76E5BE78521BA624F266A685 /* Pods_ForcasterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForcasterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D77132F286B50FF4441FA96 /* Pods-Forcaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forcaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Forcaster/Pods-Forcaster.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,11 +101,14 @@
 			isa = PBXGroup;
 			children = (
 				37C1701B1ECD453F00F7B2C4 /* AppDelegate.swift */,
-				37C1701D1ECD453F00F7B2C4 /* ViewController.swift */,
 				37C1701F1ECD453F00F7B2C4 /* Main.storyboard */,
-				37C170221ECD453F00F7B2C4 /* Assets.xcassets */,
 				37C170241ECD453F00F7B2C4 /* LaunchScreen.storyboard */,
 				37C170271ECD453F00F7B2C4 /* Info.plist */,
+				37C170461ECD507F00F7B2C4 /* Assets */,
+				37C170471ECD522A00F7B2C4 /* SearchWeather */,
+				37C1704A1ECD562A00F7B2C4 /* Weather.swift */,
+				37C1704C1ECD5B8300F7B2C4 /* OpenWeatherAPI.swift */,
+				37C1704E1ECD6C0B00F7B2C4 /* RestClient.swift */,
 			);
 			path = Forcaster;
 			sourceTree = "<group>";
@@ -102,10 +116,29 @@
 		37C1702F1ECD453F00F7B2C4 /* ForcasterTests */ = {
 			isa = PBXGroup;
 			children = (
-				37C170301ECD453F00F7B2C4 /* ForcasterTests.swift */,
+				37C170481ECD54EC00F7B2C4 /* SearchWeatherTests.swift */,
 				37C170321ECD453F00F7B2C4 /* Info.plist */,
 			);
 			path = ForcasterTests;
+			sourceTree = "<group>";
+		};
+		37C170461ECD507F00F7B2C4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				37C170221ECD453F00F7B2C4 /* Assets.xcassets */,
+				37C170411ECD500C00F7B2C4 /* LICENSE */,
+				37C1703B1ECD4EAB00F7B2C4 /* weather.ttf */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		37C170471ECD522A00F7B2C4 /* SearchWeather */ = {
+			isa = PBXGroup;
+			children = (
+				37C1703D1ECD4FAC00F7B2C4 /* SearchWeatherViewController.swift */,
+				37C1703F1ECD4FC500F7B2C4 /* SearchWeatherPresenter.swift */,
+			);
+			name = SearchWeather;
 			sourceTree = "<group>";
 		};
 		64EE5DB073DF582809ADCE71 /* Pods */ = {
@@ -220,6 +253,7 @@
 				37C170261ECD453F00F7B2C4 /* LaunchScreen.storyboard in Resources */,
 				37C170231ECD453F00F7B2C4 /* Assets.xcassets in Resources */,
 				37C170211ECD453F00F7B2C4 /* Main.storyboard in Resources */,
+				37C1703C1ECD4EAB00F7B2C4 /* weather.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +364,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C1701E1ECD453F00F7B2C4 /* ViewController.swift in Sources */,
 				37C1701C1ECD453F00F7B2C4 /* AppDelegate.swift in Sources */,
+				37C1704D1ECD5B8300F7B2C4 /* OpenWeatherAPI.swift in Sources */,
+				37C1703E1ECD4FAC00F7B2C4 /* SearchWeatherViewController.swift in Sources */,
+				37C170401ECD4FC500F7B2C4 /* SearchWeatherPresenter.swift in Sources */,
+				37C1704F1ECD6C0B00F7B2C4 /* RestClient.swift in Sources */,
+				37C1704B1ECD562A00F7B2C4 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C170311ECD453F00F7B2C4 /* ForcasterTests.swift in Sources */,
+				37C170491ECD54EC00F7B2C4 /* SearchWeatherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aycap.Forcaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -489,6 +528,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aycap.Forcaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -541,6 +581,7 @@
 				37C170371ECD453F00F7B2C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37C170381ECD453F00F7B2C4 /* Build configuration list for PBXNativeTarget "ForcasterTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +590,7 @@
 				37C1703A1ECD453F00F7B2C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
