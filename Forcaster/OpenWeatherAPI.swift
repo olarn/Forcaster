@@ -16,7 +16,7 @@ fileprivate let apiKey = "<<YOUR API KEY>>"
 
 class OpenWeatherAPI: OpenWeatherAPIProtocol, OpenWeatherForcastAPIProtocol {
 
-    let restClient: RestClientProtocol
+    private let restClient: RestClientProtocol
 
     init(restClient: RestClientProtocol) {
         self.restClient = restClient
@@ -25,11 +25,14 @@ class OpenWeatherAPI: OpenWeatherAPIProtocol, OpenWeatherForcastAPIProtocol {
     func searchWeatherByCity(city: String, result: @escaping SearchWeatherCallback) {
         let url = "http://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&units=metric"
         restClient.get(urlString: url) { data in
+
             let emptyWeather = Weather.empty
+
             guard let json = data else {
                 result(emptyWeather)
                 return
             }
+
             result(
                 Weather(
                     cityName: json["name"].string ?? emptyWeather.cityName,
