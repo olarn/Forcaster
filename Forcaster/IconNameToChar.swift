@@ -8,31 +8,30 @@
 
 import Foundation
 
+fileprivate let iconChars = [
+    "01d": "\u{f11b}",
+    "01n": "\u{f110}",
+    "02d": "\u{f112}",
+    "02n": "\u{f104}",
+    "03d": "\u{f111}",
+    "03n": "\u{f111}",
+    "04d": "\u{f111}",
+    "04n": "\u{f111}",
+    "09d": "\u{f116}",
+    "09n": "\u{f116}",
+    "10d": "\u{f113}",
+    "10n": "\u{f113}",
+    "11d": "\u{f10d}",
+    "11n": "\u{f10d}",
+    "13d": "\u{f119}",
+    "13n": "\u{f119}",
+    "50d": "\u{f10e}",
+    "50n": "\u{f10e}"
+]
+
 public func iconNameToChar(icon: String) -> String {
-    switch icon {
-    case "01d":
-        return "\u{f11b}"
-    case "01n":
-        return "\u{f110}"
-    case "02d":
-        return "\u{f112}"
-    case "02n":
-        return "\u{f104}"
-    case "03d", "03n":
-        return "\u{f111}"
-    case "04d", "04n":
-        return "\u{f111}"
-    case "09d", "09n":
-        return "\u{f116}"
-    case "10d", "10n":
-        return "\u{f113}"
-    case "11d", "11n":
-        return "\u{f10d}"
-    case "13d", "13n":
-        return "\u{f119}"
-    case "50d", "50n":
-        return "\u{f10e}"
-    default:
+    guard let char = iconChars[icon] else {
         return "E"
     }
+    return char
 }

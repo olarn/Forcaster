@@ -38,7 +38,7 @@ class FakeRestClient: RestClientProtocol {
 }
 
 class SearchWeatherTests: XCTestCase {
-    
+
     func testSearchBangkokOverPresenterShouldReturnBangkokWeather() {
 
         let expected = expectation(description: "Search Bangkok Should Return Bangkok's Weather")

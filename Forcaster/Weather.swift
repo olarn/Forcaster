@@ -21,7 +21,7 @@ struct Weather: Equatable {
         icon: iconNameToChar(icon: "e")
     )
 
-    static func ==(lhs: Weather, rhs: Weather) -> Bool{
+    static func == (lhs: Weather, rhs: Weather) -> Bool {
         return
             lhs.cityName == rhs.cityName &&
             lhs.temperature == rhs.temperature &&

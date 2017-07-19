@@ -18,7 +18,7 @@ struct DailyWeather: Equatable {
         detail: "--",
         icon: iconNameToChar(icon: "e"))
 
-    static func ==(lhs: DailyWeather, rhs: DailyWeather) -> Bool{
+    static func == (lhs: DailyWeather, rhs: DailyWeather) -> Bool {
         return
             lhs.date == rhs.date &&
             lhs.detail == rhs.detail &&

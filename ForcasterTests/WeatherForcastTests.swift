@@ -19,18 +19,17 @@ class FakeForcast: OpenWeatherForcastAPIProtocol {
             DailyWeather(
                 date: "Tuesday 2, January 2017",
                 detail: "rainy",
-                icon: "e"),
+                icon: "e")
             ])
     }
 }
 
-
 class WeatherForcastTests: XCTestCase {
-    
+
     override func setUp() {
         super.setUp()
     }
-    
+
     override func tearDown() {
         super.tearDown()
     }
@@ -54,7 +53,8 @@ class WeatherForcastTests: XCTestCase {
 
     func testWeatherForcastPresenterForBangkokShouldReturnBangkokForcasts() {
 
-        let expected = expectation(description: "Weather Forcast Presenter For Bangkok Should Return Bangkok's Forcasts")
+        let expected = expectation(description:
+            "Weather Forcast Presenter For Bangkok Should Return Bangkok's Forcasts")
 
         let openWeatherForcastApi = FakeForcast()
         let presenter = DailyForcastTableViewPresenter(forcastApi: openWeatherForcastApi)
