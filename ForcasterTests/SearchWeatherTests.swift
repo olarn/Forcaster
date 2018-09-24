@@ -53,8 +53,8 @@ class SearchWeatherTests: XCTestCase {
         weatherPresenter.search(city: "Bangkok")
 
         waitForExpectations(timeout: 1) { error in
-            if let e = error {
-                XCTFail(e.localizedDescription)
+            if let err = error {
+                XCTFail(err.localizedDescription)
             }
         }
     }
@@ -71,8 +71,8 @@ class SearchWeatherTests: XCTestCase {
         }
 
         waitForExpectations(timeout: 1) { error in
-            if let e = error {
-                XCTFail(e.localizedDescription)
+            if let err = error {
+                XCTFail(err.localizedDescription)
             }
         }
     }

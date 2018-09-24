@@ -45,8 +45,8 @@ class WeatherForcastTests: XCTestCase {
         }
 
         waitForExpectations(timeout: 1) { error in
-            if let e = error {
-                XCTFail(e.localizedDescription)
+            if let err = error {
+                XCTFail(err.localizedDescription)
             }
         }
     }
@@ -65,8 +65,8 @@ class WeatherForcastTests: XCTestCase {
         presenter.requestForcastFor(cityName: "Bangkok")
 
         waitForExpectations(timeout: 1) { error in
-            if let e = error {
-                XCTFail(e.localizedDescription)
+            if let err = error {
+                XCTFail(err.localizedDescription)
             }
         }
     }
