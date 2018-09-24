@@ -9,7 +9,7 @@ target 'Forcaster' do
   # Pods for Forcaster
 
   pod 'Alamofire'
-  pod 'Alamofire-SwiftyJSON', '~> 2.0.0-beta.1'
+  pod 'Alamofire-SwiftyJSON'
 
   target 'ForcasterTests' do
     inherit! :search_paths
