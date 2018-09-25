@@ -8,7 +8,7 @@
 
 import Foundation
 
-fileprivate let iconChars = [
+private let iconChars = [
     "01d": "\u{f11b}",
     "01n": "\u{f110}",
     "02d": "\u{f112}",

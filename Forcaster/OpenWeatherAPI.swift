@@ -12,7 +12,7 @@ import SwiftyJSON
 /// The api key to communicate with openweathermap.org
 /// Create you own on https://home.openweathermap.org/users/sign_up
 
-fileprivate let apiKey = "<<YOUR API KEY>>"
+private let apiKey = "<<YOUR_KEY>>"
 
 class OpenWeatherAPI: OpenWeatherAPIProtocol, OpenWeatherForcastAPIProtocol {
 
